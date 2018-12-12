@@ -1,11 +1,11 @@
 package inscricao.campeonato;
-
-import java.util.Date;
+import java.util.LinkedList;
 
 public class InscDuo extends Inscricao{
 	
-	private nomeEquipe;
+	private String nomeEquipe;
 	private LinkedList<Participante> participantes = new LinkedList<Participante>();
+	private final int NUM_PARTICIP = 2;
 
 	public InscDuo(String nome, Participante p1, Participante p2){
 		this.nomeEquipe = nome;
@@ -14,8 +14,14 @@ public class InscDuo extends Inscricao{
 	}
 	
 	@Override
+	public int getNumParticipantes() {
+		return this.NUM_PARTICIP;
+	}
+
+	
+	@Override
 	public String toString() {
-		return "InscDuo [nomeDuo=" + nomeDuo + ", toString()=";
+		return "InscDuo [nomeDuo=" + nomeEquipe + ", toString()=";
 	}
 
 	

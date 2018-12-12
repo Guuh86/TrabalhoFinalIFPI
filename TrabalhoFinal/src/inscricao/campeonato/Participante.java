@@ -1,15 +1,14 @@
 package inscricao.campeonato;
 
-import java.util.Date;
 
-public class Inscricao {
+public class Participante {
 	private String nome;
 	private String cpf;
 	private String rg;
 	private String endereco;
 	private String dataNasc;
 	
-	public Inscricao(String nome, String cpf, String rg, String endereco, Date dataNasc) {
+	public Participante(String nome, String cpf, String rg, String endereco, String dataNasc) {
 		super();
 		this.nome = nome;
 		this.cpf = cpf;
@@ -38,7 +37,7 @@ public class Inscricao {
 	}
 
 
-	public Date getDataNasc() {
+	public String getDataNasc() {
 		return dataNasc;
 	}
 
