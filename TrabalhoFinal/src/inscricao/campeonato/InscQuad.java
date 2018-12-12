@@ -3,25 +3,17 @@ package inscricao.campeonato;
 import java.util.Date;
 
 public class InscQuad extends Inscricao{
-	private String InscQuad;
-
-	public InscQuad(String nome, String cpf, String rg, String endereco, Date dataNasc, String inscQuad) {
-		super(nome, cpf, rg, endereco, dataNasc);
-		InscQuad = inscQuad;
+	private nomeEquipe;
+	private LinkedList<Participante> participantes = new LinkedList<Participante>();
+	
+	public InscTrio(String nome, Participante p1, Participante p2, Participante p3) {
+		this.nomeEquipe = nome;
+		this.participantes.add(p1);
+		this.participantes.add(p2);
+		this.participantes.add(p3);
+		this.participantes.add(p4);
 	}
 	
-	public InscQuad() {
-		
-	}
-
-	public String getInscQuad() {
-		return InscQuad;
-	}
-
-	public void setInscQuad(String inscQuad) {
-		InscQuad = inscQuad;
-	}
-
 	@Override
 	public String toString() {
 		return "InscQuad [InscQuad=" + InscQuad + ", toString()=" + super.toString() + "]";

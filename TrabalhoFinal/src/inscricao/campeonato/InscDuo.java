@@ -3,32 +3,20 @@ package inscricao.campeonato;
 import java.util.Date;
 
 public class InscDuo extends Inscricao{
-	private String nomeDuo;
+	
+	private nomeEquipe;
+	private LinkedList<Participante> participantes = new LinkedList<Participante>();
 
-	public InscDuo(String nome, String cpf, String rg, String endereco, Date dataNasc, String nomeDuo) {
-		super(nome, cpf, rg, endereco, dataNasc);
-		this.nomeDuo = nomeDuo;
+	public InscDuo(String nome, Participante p1, Participante p2){
+		this.nomeEquipe = nome;
+		this.participantes.add(p1);
+		this.participantes.add(p2);
 	}
 	
-	public InscDuo() {
-		
-	}
-
-	public String getNomeDuo() {
-		return nomeDuo;
-	}
-
-	public void setNomeDuo(String nomeDuo) {
-		this.nomeDuo = nomeDuo;
-	}
-
 	@Override
 	public String toString() {
-		return "InscDuo [nomeDuo=" + nomeDuo + ", toString()=" + super.toString() + "]";
+		return "InscDuo [nomeDuo=" + nomeDuo + ", toString()=";
 	}
-	
-	
-	
-	
 
+	
 }

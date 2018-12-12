@@ -3,24 +3,16 @@ package inscricao.campeonato;
 import java.util.Date;
 
 public class InscTrio extends Inscricao{
-	private String nomeTrio;
-
-	public InscTrio(String nome, String cpf, String rg, String endereco, Date dataNasc, String nomeTrio) {
-		super(nome, cpf, rg, endereco, dataNasc);
-		this.nomeTrio = nomeTrio;
-	}
+	private nomeEquipe;
+	private LinkedList<Participante> participantes = new LinkedList<Participante>();
 	
-	public InscTrio() {
-		
+	public InscTrio(String nome, Participante p1, Participante p2, Participante p3) {
+		this.nomeEquipe = nome;
+		this.participantes.add(p1);
+		this.participantes.add(p2);
+		this.participantes.add(p3);
 	}
 
-	public String getNomeTrio() {
-		return nomeTrio;
-	}
-
-	public void setNomeTrio(String nomeTrio) {
-		this.nomeTrio = nomeTrio;
-	}
 
 	@Override
 	public String toString() {
