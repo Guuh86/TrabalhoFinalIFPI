@@ -12,22 +12,16 @@ public class InscTrio extends Inscricao{
 		this.participantes.add(p1);
 		this.participantes.add(p2);
 		this.participantes.add(p3);
+		setNUM_PARTICIP(this.NUM_PARTICIP);
 	}
 	
-	@Override
-	public int getNumParticipantes() {
-		return this.NUM_PARTICIP;
+	public InscTrio() {
+		setNUM_PARTICIP(this.NUM_PARTICIP);
 	}
-
-
+	
 	@Override
 	public String toString() {
 		return "InscTrio [nomeTrio=" + nomeEquipe + ", toString()=" + super.toString() + "]";
 	}
-
-
-
-	
-	
 
 }

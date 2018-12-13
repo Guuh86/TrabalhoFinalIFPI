@@ -9,7 +9,6 @@ public class Participante {
 	private String dataNasc;
 	
 	public Participante(String nome, String cpf, String rg, String endereco, String dataNasc) {
-		super();
 		this.nome = nome;
 		this.cpf = cpf;
 		this.rg = rg;

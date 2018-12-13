@@ -11,18 +11,18 @@ public class InscDuo extends Inscricao{
 		this.nomeEquipe = nome;
 		this.participantes.add(p1);
 		this.participantes.add(p2);
+		setNUM_PARTICIP(this.NUM_PARTICIP);
+		
 	}
 	
-	@Override
-	public int getNumParticipantes() {
-		return this.NUM_PARTICIP;
+	public InscDuo() {
+		setNUM_PARTICIP(this.NUM_PARTICIP);
 	}
-
+	
 	
 	@Override
 	public String toString() {
 		return "InscDuo [nomeDuo=" + nomeEquipe + ", toString()=";
 	}
 
-	
 }

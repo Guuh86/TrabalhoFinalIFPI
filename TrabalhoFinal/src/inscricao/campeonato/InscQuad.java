@@ -13,11 +13,7 @@ public class InscQuad extends Inscricao{
 		this.participantes.add(p2);
 		this.participantes.add(p3);
 		this.participantes.add(p4);
-	}
-	
-	@Override
-	public int getNumParticipantes() {
-		return this.NUM_PARTICIP;
+		setNUM_PARTICIP(this.NUM_PARTICIP);
 	}
 
 	
