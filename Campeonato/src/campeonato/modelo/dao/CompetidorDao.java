@@ -24,7 +24,7 @@ public class CompetidorDao implements GenericDao<Competidor> {
 		String url = "jdbc:h2:tcp://localhost/~/campeonato";
 		
 		String user = "root"; // nome de usuario para acesso ao banco
-		String pass = "root"; // senha de acesso ao banco
+		String pass = ""; // senha de acesso ao banco
 		
 		return DriverManager.getConnection(url);
 	}
@@ -140,5 +140,3 @@ public class CompetidorDao implements GenericDao<Competidor> {
 		
 	}
 	
-	
-}
